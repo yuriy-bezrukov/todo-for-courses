@@ -46,3 +46,16 @@ function onChangeTaskStatus(event) {
 }
 
 TODO_LIST_ELEMENT.addEventListener('click', onChangeTaskStatus);
+
+function onAddTask(e) {
+  e.preventDefault();
+  const newTask = {
+    id: Math.random().toString().split('.').join('-'),
+    title: document.querySelector('.todo__modal-add-task-title').value,
+    description: document.querySelector('.todo__modal-add-task-description').value,
+  };
+  tasks.push(newTask);
+  renderTasks();
+}
+
+document.querySelector('.todo__modal-add-task-form').addEventListener('submit', onAddTask);
