@@ -226,3 +226,44 @@ body {
 	box-shadow: 0 2px 8px rgba(0, 0, 0 , 0.25);
 }
 
+.todo__overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000000cf;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.todo__modal-add-task {
+    width: 350px;
+    background-color: #fff;
+}
+
+input.todo__modal-add-task-input {
+    border: 2px solid #c7c7c7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+	margin-bottom: 20px;
+}
+
+.todo__modal-add-task-add-button {
+    background: #c7c7c7;
+    border-radius: 10px;
+    border: 2px solid #bbb;
+    padding: 10px 20px;
+    color: #343434;
+    font-weight: 600;
+}
+
+form.todo__modal-add-task-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}

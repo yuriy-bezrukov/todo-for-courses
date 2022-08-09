@@ -58,7 +58,7 @@
 						</div>
 						<div class="todo__completed list">
 
-								<img src="/assets/img/add.png" alt="add" class="todo__add">
+							<img src="/assets/img/add.png" alt="add" class="todo__add">
 
 							<div class="list__title">
 								<h2>
@@ -109,22 +109,27 @@
 										Check the latest on Community
 									</div>
 								</label>
-							</div> 	
+							</div>
 						</div>
-					</div> 	
+					</div>
 				</div>
 			</div>
 		</main>
 
-		<footer class="footer">
-
-		</footer>
-
+		<footer class="footer"></footer>
 	</div>
 
-	<script src="/src/scripts/main.js">
+	<script src="/src/scripts/main.js"></script>
 
-	</script>
+	<div class="todo__overlay">
+		<div class="todo__modal-add-task">
+			<form class="todo__modal-add-task-form">
+				<input placeholder="Title" class="todo__modal-add-task-input todo__modal-add-task-title">
+				<input placeholder="Description" class="todo__modal-add-task-input todo__modal-add-task-description">
+				<button type="submit" class="todo__modal-add-task-add-button">Add task</button>
+			</form>
+		</div>
+	</div>
 
 </body>
 
