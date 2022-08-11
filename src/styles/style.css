@@ -238,6 +238,16 @@ body {
     justify-content: center;
     z-index: 999;
 }
+/* Step 1 */
+
+
+.todo__overlay {
+	display: none;
+}
+
+.todo__overlay--active {
+	display: block;
+}
 
 .todo__modal-add-task {
     width: 350px;
