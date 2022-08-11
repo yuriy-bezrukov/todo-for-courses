@@ -56,14 +56,10 @@ function onAddTask(e) {
   };
   tasks.push(newTask);
   renderTasks();
-
-  function hideTaskForm(){
-    addTaskForm.classList.add('initial'); 
-  };
   
   hideTaskForm();
 
-  // Строки 60 - 64: Закрытие окна формы после нажатия кнопки Submit
+  // Строка 60: Закрытие окна формы после нажатия кнопки Submit
   
   // Реализовать очистку полей Title и 
   // Description после каждого закрытия формы 
@@ -86,15 +82,16 @@ function showTaskForm(){
 // Step 3
 addTaskForm.onclick = function hideOverlayForm(event){
   if (event.target.classList.contains('todo__overlay')) {
-    // hideTaskForm();
-
-    addTaskForm.classList.add('initial');
+    hideTaskForm();
   };
 };
 
+function hideTaskForm(){
+  addTaskForm.classList.add('initial'); 
+}
 
 //Задать адекватные названия фунций и переменных
-//Разобраться, почему функиция hideTaskForm не срабатывает в Шаге 3
+
 
 
 
