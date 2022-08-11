@@ -65,6 +65,9 @@ function onAddTask(e) {
 
   // Строки 60 - 64: Закрытие окна формы после нажатия кнопки Submit
   
+  // Реализовать очистку полей Title и 
+  // Description после каждого закрытия формы 
+  // через воздействие на input placeholder? 
 }
 
 document.querySelector('.todo__modal-add-task-form').addEventListener('submit', onAddTask);
@@ -81,6 +84,17 @@ function showTaskForm(){
 }
 
 // Step 3
+addTaskForm.onclick = function hideOverlayForm(event){
+  if (event.target.classList.contains('todo__overlay')) {
+    // hideTaskForm();
+
+    addTaskForm.classList.add('initial');
+  };
+};
+
+
+//Задать адекватные названия фунций и переменных
+//Разобраться, почему функиция hideTaskForm не срабатывает в Шаге 3
 
 
 
