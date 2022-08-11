@@ -56,6 +56,34 @@ function onAddTask(e) {
   };
   tasks.push(newTask);
   renderTasks();
+
+  function hideTaskForm(){
+    addTaskForm.classList.add('initial'); 
+  };
+  
+  hideTaskForm();
+
+  // Строки 60 - 64: Закрытие окна формы после нажатия кнопки Submit
+  
 }
 
 document.querySelector('.todo__modal-add-task-form').addEventListener('submit', onAddTask);
+
+// Step 2
+const addTaskButton = document.querySelector('.todo__add');
+
+const addTaskForm = document.querySelector('.todo__overlay');
+
+addTaskButton.addEventListener('click', showTaskForm);
+
+function showTaskForm(){
+  addTaskForm.classList.remove('initial');
+}
+
+// Step 3
+
+
+
+
+
+
